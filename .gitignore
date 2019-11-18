@@ -328,3 +328,10 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+/Prg/Prg/Prg.vcxproj
+/Prg/Prg/Prg.vcxproj.filters
+/Prg/Prg.sln
+/Basic-Programming.sln
+/Basic-Programming/Basic-Programming.vcxproj.filters
+/Basic-Programming/Basic-Programming.vcxproj
+/Basic-Programming/main.c
