@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void) {
+int main() {
 	long long int limit;
 	double sign = 1.0;
 	double s1 = 0, s2 = 0;
