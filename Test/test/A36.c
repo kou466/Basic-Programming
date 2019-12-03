@@ -19,26 +19,20 @@ int main()
 	for (int k = 0; k < n; k++)
 		C[k] = (int)malloc(sizeof(int) * m);
 
-	for (i = 0; i < n; i++)
-	{
-		for (j = 0; j < m; j++)
-		{
+	for (i = 0; i < n; i++) {
+		for (j = 0; j < m; j++) {
 			scanf("%d", &A[i][j]);
 		}
 	}
 
-	for (int i = 0; i < n; i++)
-	{
-		for (int j = 0; j < m; j++)
-		{
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
 			scanf("%d", &B[i][j]);
 		}
 	}
 
-	for (int i = 0; i < n; i++)
-	{
-		for (int j = 0; j < m; j++)
-		{
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
 			C[i][j] = A[i][j] + B[i][j];
 			printf("%d ", C[i][j]);
 		}
