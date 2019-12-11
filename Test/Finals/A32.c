@@ -17,7 +17,7 @@ int compare(const void* a, const void* b) {
 int main()
 {
     int n, k, i, j, arr[100001];
-    double sum = 0, count = 0;
+    double sum = 0, count = 0, trim = 0;
 
     scanf("%d %d", &n, &k);
 
@@ -31,7 +31,13 @@ int main()
         count++;
         sum += arr[i];
     }
-    printf("%.1lf\n", sum / count);
+    for (i = k; i < n - k; i++) {
+        trim += arr[i];
+    }
+
+    trim += ((arr[k] * k) + (arr[n - k - 1] * k));
+
+    printf("%.1lf %.1lf\n", sum / count, trim / n);
 
     return 0;
 }
