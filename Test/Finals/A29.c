@@ -1,21 +1,26 @@
 #include <stdio.h>
-int RC[1000][1000];
+
 int main() {
+
 	int n = 0, m = 0;
 	int rmax = 0, cmax = 0, nmax, mmax;
 	int sum;
 
 	scanf("%d %d", &n, &m);
 
-	for (int i = 1; i <= n; i++) {
-		for (int j = 1; j <= m; j++) {
+	int** RC = (int**)malloc(sizeof(int*) * n);
+	for (int k = 0; k < n; k++)
+		RC[k] = (int)malloc(sizeof(int) * m);
+
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
 			scanf("%d", &RC[i][j]);
 		}
 	}
 
-	for (int i = 1; i <= n; i++) {
+	for (int i = 0; i < n; i++) {
 		sum = 0;
-		for (int j = 1; j <= m; j++) {
+		for (int j = 0; j < m; j++) {
 			sum += RC[i][j];
 			if (sum >= rmax) {
 				rmax = sum;
@@ -23,9 +28,10 @@ int main() {
 			}
 		}
 	}
-	for (int j = 1; j <= m; j++) {
+
+	for (int j = 0; j < m; j++) {
 		sum = 0;
-		for (int i = 1; i <= n; i++) {
+		for (int i = 0; i < n; i++) {
 			sum += RC[i][j];
 			if (sum >= cmax) {
 				cmax = sum;
@@ -33,6 +39,6 @@ int main() {
 			}
 		}
 	}
-	printf("%d %d \n%d %d", nmax, rmax, mmax, cmax);
+	printf("%d %d \n%d %d", nmax + 1, rmax, mmax + 1, cmax);
 	return 0;
 }
