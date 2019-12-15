@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-int main(void) {
+int main() {
 	int lower, upper;
 
-	scanf("%d%d", &lower, &upper);
+	scanf("%d %d", &lower, &upper);
 
 	for (int i = lower; i <= upper; i++)
 	{

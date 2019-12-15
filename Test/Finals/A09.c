@@ -2,7 +2,7 @@
 
 int square(int lower, int upper);
 
-int main(void) {
+int main() {
 	int lower, upper;
 
 	while (scanf("%d %d", &lower, &upper) == 2 && lower < upper) {

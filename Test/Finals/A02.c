@@ -10,7 +10,7 @@ int main() {
 	l = n + m;
 
 	for (; s <= l; s++) {
-		sum = sum + s;
+		sum += s;
 	}
 	printf("%lld", sum);
 }

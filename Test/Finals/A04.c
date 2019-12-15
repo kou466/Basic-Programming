@@ -10,3 +10,5 @@ int main() {
 
 	printf("Fahrenheit: %.2lf = Celsius: %.2lf = Kelvin: %.2lf ", f, c, k);
 }
+
+// f = c / (5.0 / 9.0) + 32.0

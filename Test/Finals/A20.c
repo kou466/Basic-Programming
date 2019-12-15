@@ -1,7 +1,7 @@
 ﻿#include <stdio.h>
 
 int main() {
-	char ch = 'a';
+	char ch;
 	int spaces = 0, lines = 0, others = 0;
 
 	while ((ch = getchar()) != EOF) {

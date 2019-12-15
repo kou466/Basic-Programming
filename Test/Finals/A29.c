@@ -17,7 +17,6 @@ int main() {
 			scanf("%d", &RC[i][j]);
 		}
 	}
-
 	for (int i = 0; i < n; i++) {
 		sum = 0;
 		for (int j = 0; j < m; j++) {
@@ -28,7 +27,6 @@ int main() {
 			}
 		}
 	}
-
 	for (int j = 0; j < m; j++) {
 		sum = 0;
 		for (int i = 0; i < n; i++) {
