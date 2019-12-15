@@ -15,11 +15,13 @@ int compare(const void* a, const void* b) {
 }
 
 int main() {
-    int n, i, j, sum = 0, k1, k2, k3;
+    int n, k1, k2, k3; //input
+    int i, j; //for loop
+    int sum = 0; //out come
 
     scanf("%d %d %d %d", &n, &k1, &k2, &k3);
 
-    int* arr = (int*)malloc(sizeof(int) * N);
+    int* arr = (int*)malloc(sizeof(int) * n);
 
     for (i = 0; i < n; i++) {
         scanf("%d", &arr[i]);

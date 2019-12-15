@@ -14,9 +14,10 @@ int compare(const void* a, const void* b) {
     return 0;
 }
 
-int main()
-{
-    int n, k, i, j, arr[100001];
+int main() {
+    int n, k; //all, except
+    int i, j; //for loop
+    int arr[100001]; // score input
     double sum = 0, count = 0, trim = 0;
 
     scanf("%d %d", &n, &k);
@@ -30,8 +31,6 @@ int main()
     for (i = k; i < n - k; i++) {
         count++;
         sum += arr[i];
-    }
-    for (i = k; i < n - k; i++) {
         trim += arr[i];
     }
 

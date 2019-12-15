@@ -1,16 +1,17 @@
 #include <stdio.h>
 
-char A[1003][1003];
+char A[1003][1003]; //array
 
 int main() {
-	int m, n, i, j, k1, k2, msum, sum;
+	int m, n; //input
+	int i, j, k1, k2; //for loop
+	int msum = 0, sum; //out come
 
 	scanf("%d %d\n", &m, &n);
 
 	for (i = 0; i < m; i++) {
-		gets(A[i]);
+		scanf("%d", &A[i]);  // == gets(A[i]);
 	}
-	msum = 0;
 
 	for (i = 1; i < m - 1; i++) {
 		for (j = 1; j < n - 1; j++) {
