@@ -10,7 +10,7 @@ int main() {
 	scanf("%d %d\n", &m, &n);
 
 	for (i = 0; i < m; i++) {
-		scanf("%d", &A[i]);  // == gets(A[i]);
+		scanf("%s", &A[i]);  // == gets(A[i]);
 	}
 
 	for (i = 1; i < m - 1; i++) {

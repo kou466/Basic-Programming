@@ -6,8 +6,6 @@ int main() {
 	double x1, x2;
 	double d;
 
-	
-
 	while (scanf("%lf %lf %lf", &a, &b, &c) == 3) {
 		d = b * b - 4.0 * a * c;
 
